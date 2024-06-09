@@ -1,8 +1,9 @@
 #!/bin/bash
-
-# Script to manage serverstatus probe
+# Author: honeok8s
+# Blog: honeok.com
+# Desc: Script to manage serverstatus probe
 # Example: */1 * * * * /root/serverstatus.sh s100 >/dev/null 2>&1
-# Blog: www.honeok.com
+# Github: https://raw.githubusercontent.com/honeok8s/shell/main/serverstatus_lxc.sh
 
 set -o errexit
 cd ~

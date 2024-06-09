@@ -1,8 +1,9 @@
 #!/bin/bash
-
-# Script to manage serverstatus probe
-# Example: */1 * * * * /root/serverstatus.sh s100 >/dev/null 2>&1
-# Blog: www.honeok.com
+# Author: honeok8s
+# Blog: honeok.com
+# Desc: Script to manage serverstatus probe
+# Example: */1 * * * * /root/serverstatus_kvm.sh s250 >/dev/null 2>&1
+# Github: https://raw.githubusercontent.com/honeok8s/shell/main/serverstatus_kvm.sh
 
 set -o errexit
 cd ~

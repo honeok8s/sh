@@ -2,7 +2,7 @@
 # Author: honeok
 # Blog: honeok.com
 # Desc: TRUNCATE NGX LOG
-# Github: github.com/honeok8s
+# Github: https://raw.githubusercontent.com/honeok8s/shell/main/truncate_ngx_log.sh
 ##############################
 
 # set log and backup directories

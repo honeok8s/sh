@@ -2,7 +2,7 @@
 # Author: honeok8s
 # Blog: honeok.com
 # Desc: Script to manage serverstatus probe
-# Example: */1 * * * * /root/serverstatus.sh s100 >/dev/null 2>&1
+# Example: */1 * * * * /root/serverstatus_lxc.sh s250 >/dev/null 2>&1
 # Github: https://raw.githubusercontent.com/honeok8s/shell/main/serverstatus_lxc.sh
 
 set -o errexit
@@ -44,7 +44,7 @@ PROBE(){
 
   # Restart probe if not running
   if [[ "${COUNTER}" == 0 ]]; then
-    nohup python3 client-linux.py SERVER="107.174.0.197" USER="${PARAMS}" >/dev/null 2>&1 &
+    nohup python3 client-linux.py SERVER="127.0.0.1" USER="${PARAMS}" >/dev/null 2>&1 &
     echo "${LOG_TIME} [WARN] Probe started." >> ./main.log
   fi
 

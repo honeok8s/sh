@@ -4,11 +4,11 @@
 ## Serverstatus探针，客户端探针存活监控
 ```shell
 # KVM
-curl -sS -O https://raw.githubusercontent.com/honeok8s/shell/main/serverstatus_kvm.sh && chmod +x serverstatus_kvm.sh
+curl -sS -O https://raw.githubusercontent.com/honeok8s/shell/main/serverstatus_kvm.sh && chmod +x ./serverstatus_kvm.sh
 # LXC
-curl -sS -O https://raw.githubusercontent.com/honeok8s/shell/main/serverstatus_lxc.sh && chmod +x serverstatus_lcx.sh
+curl -sS -O https://raw.githubusercontent.com/honeok8s/shell/main/serverstatus_lxc.sh && chmod +x ./serverstatus_lxc.sh
 ```
 ## NGINX日志切割 & 备份 & 删除旧日志,适用于编译安装NGINX
 ```shell
-curl -sS -O https://raw.githubusercontent.com/honeok8s/shell/main/truncate_ngx_log.sh && chmod +x truncate_ngx_log.sh
+curl -sS -O https://raw.githubusercontent.com/honeok8s/shell/main/truncate_ngx_log.sh && chmod +x ./truncate_ngx_log.sh
 ```

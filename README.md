@@ -11,7 +11,7 @@ curl -sS -O https://raw.githubusercontent.com/honeok8s/shell/main/serverstatus_k
 # 适用LXC等小鸡架构
 curl -sS -O https://raw.githubusercontent.com/honeok8s/shell/main/serverstatus_lxc.sh && chmod +x ./serverstatus_lxc.sh
 ```
-## NGINX日志
+## NGINX日志管理
 ```shell
 # 适用编译安装NGINX及基于NGINX二次开发的高性能WEB服务器日志切割备份删除
 # LOG_DIR="/usr/local/nginx/logs"              日志路径可自行定义

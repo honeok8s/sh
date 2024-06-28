@@ -1,7 +1,7 @@
 #!/bin/bash
 # Author: honeok8s
 # Blog: honeok.com
-# Desc: Truncate nginx log
+# Desc: logrotate nginx log
 # Example: 0 4 * * * /root/truncate_ngx_log.sh >/dev/null 2>&1
 # Github: https://raw.githubusercontent.com/honeok8s/shell/main/truncate_ngx_log.sh
 

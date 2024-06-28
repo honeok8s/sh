@@ -2,7 +2,7 @@
 # Author: honeok8s
 # Blog: honeok.com
 # Desc: Script to manage serverstatus probe
-# Example: */1 * * * * /root/serverstatus_lxc.sh s250 >/dev/null 2>&1
+# Example: */1 * * * * $PWD/serverstatus_lxc.sh s250 >/dev/null 2>&1
 # Github: https://raw.githubusercontent.com/honeok8s/shell/main/serverstatus_lxc.sh
 
 set -o errexit
@@ -60,11 +60,9 @@ PROBE(){
   fi
 }
 
-# Main function
 MAIN() {
   TIMEZONE
   PROBE
 }
 
-# Execute main function
 MAIN

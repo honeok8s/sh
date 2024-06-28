@@ -1,15 +1,15 @@
 #!/bin/bash
-# Author: honeok8s
+# Author: honeok
 # Blog: honeok.com
 # Desc: logrotate nginx log
-# Example: 0 4 * * * /root/truncate_ngx_log.sh >/dev/null 2>&1
-# Github: https://raw.githubusercontent.com/honeok8s/shell/main/truncate_ngx_log.sh
+# Example: 0 4 * * * /root/logrotate_ngx.sh >/dev/null 2>&1
+# Github: https://raw.githubusercontent.com/honeok8s/shell/main/logrotate_ngx.sh
 
 # set log and backup directories
 LOG_DIR="/usr/local/nginx/logs"
 BAK_DIR="/usr/local/nginx/logs/backup"
 LOG_PREFIX="*.log"
-LOG_FILE="/var/log/truncate_ngx.log"  # script log
+LOG_FILE="/var/log/logrotate_ngx.log"  # script log
 
 # create backup directory if it doesn't exist
 if [[ ! -d "${BAK_DIR}" ]]; then

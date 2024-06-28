@@ -20,7 +20,7 @@ if [[ ! -d "${BAK_DIR}" ]]; then
 fi
 
 # use file locking to prevent concurrent script executions
-LOCK_FILE="/var/lock/nginx_log_truncate.lock"
+LOCK_FILE="/var/lock/logrotate_ngx.lock"
 exec 9>"${LOCK_FILE}"
 if ! flock -n 9; then
   echo "$(date '+%Y-%m-%d %H:%M:%S') - [ERROR] Unable to acquire lock, another instance is running" >> "${LOG_FILE}"; exit 1

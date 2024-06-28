@@ -2,7 +2,7 @@
 # Author: honeok8s
 # Blog: honeok.com
 # Desc: Script to manage serverstatus probe
-# Example: */1 * * * * /root/serverstatus_kvm.sh s250 >/dev/null 2>&1
+# Example: */1 * * * * $PWD/serverstatus_kvm.sh s250 >/dev/null 2>&1
 # Github: https://raw.githubusercontent.com/honeok8s/shell/main/serverstatus_kvm.sh
 
 set -o errexit
@@ -54,11 +54,9 @@ PROBE(){
   fi
 }
 
-# Main function
 MAIN() {
   TIMEZONE
   PROBE
 }
 
-# Execute main function
 MAIN

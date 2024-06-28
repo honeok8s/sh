@@ -1,5 +1,5 @@
 #!/bin/bash
-# Author: honeok8s
+# Author: honeok
 # Blog: honeok.com
 # Desc: Script to manage serverstatus probe
 # Example: */1 * * * * $PWD/serverstatus_lxc.sh s250 >/dev/null 2>&1
